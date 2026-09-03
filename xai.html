@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>xAI Clone — Products Preview</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="xai.css">
+</head>
+<body>
+
+<!-- ==================== NAVBAR ==================== -->
+<header class="xai-nav">
+  <div class="xai-nav-inner">
+    <a href="#" class="xai-logo" aria-label="xAI Home">
+      <svg width="40" height="24" viewBox="0 0 40 24" fill="none">
+        <path d="M2 2L18 22M18 2L2 22" stroke="#000" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M22 2L38 22M38 2L22 22" stroke="#000" stroke-width="2.5" stroke-linecap="round"/>
+      </svg>
+    </a>
+    <nav class="xai-nav-links">
+      <div class="xai-dropdown" data-xai-dropdown>
+        <button class="xai-nav-link xai-nav-link--active">Products <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+        <div class="xai-dropdown-menu">
+          <a href="#" class="xai-dropdown-item"><strong>Grok</strong><span>Frontier reasoning AI</span></a>
+          <a href="#" class="xai-dropdown-item"><strong>Business</strong><span>Grok for enterprise</span></a>
+          <a href="#" class="xai-dropdown-item"><strong>Government</strong><span>Grok for government</span></a>
+        </div>
+      </div>
+      <div class="xai-dropdown" data-xai-dropdown>
+        <button class="xai-nav-link">Solutions <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+        <div class="xai-dropdown-menu">
+          <a href="#" class="xai-dropdown-item"><strong>Developers</strong><span>API & SDKs</span></a>
+          <a href="#" class="xai-dropdown-item"><strong>Business</strong><span>Enterprise solutions</span></a>
+        </div>
+      </div>
+      <div class="xai-dropdown" data-xai-dropdown>
+        <button class="xai-nav-link">Developer <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+        <div class="xai-dropdown-menu">
+          <a href="#" class="xai-dropdown-item"><strong>API Console</strong><span>Start building</span></a>
+          <a href="#" class="xai-dropdown-item"><strong>Documentation</strong><span>API reference</span></a>
+          <a href="#" class="xai-dropdown-item"><strong>Grok Build</strong><span>Code with AI</span></a>
+        </div>
+      </div>
+      <div class="xai-dropdown" data-xai-dropdown>
+        <button class="xai-nav-link">Company <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+        <div class="xai-dropdown-menu">
+          <a href="#" class="xai-dropdown-item"><strong>About</strong><span>Our mission</span></a>
+          <a href="#" class="xai-dropdown-item"><strong>Careers</strong><span>Join the team</span></a>
+          <a href="#" class="xai-dropdown-item"><strong>Contact</strong><span>Get in touch</span></a>
+          <a href="#" class="xai-dropdown-item"><strong>News</strong><span>Latest updates</span></a>
+        </div>
+      </div>
+      <a href="#" class="xai-nav-link">Pricing</a>
+      <a href="#" class="xai-nav-link">News</a>
+    </nav>
+    <div class="xai-nav-actions">
+      <a href="#" class="xai-btn xai-btn--outline">Contact Sales</a>
+      <div class="xai-btn-group">
+        <a href="#" class="xai-btn xai-btn--dark">Try for free</a>
+        <button class="xai-btn xai-btn--dark xai-btn--chevron" aria-label="More options">
+          <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ==================== PRODUCTS PREVIEW SECTION ==================== -->
+<section class="xai-products">
+  <div class="xai-products-container">
+    <!-- Left: Product List -->
+    <div class="xai-product-list">
+      <button class="xai-product-item active" data-product="chat">
+        <h3>Chat</h3>
+        <p>Frontier reasoning with real-time knowledge and web search.</p>
+      </button>
+      <button class="xai-product-item" data-product="build">
+        <h3>Build</h3>
+        <p>Plan, edit, and ship code from your terminal with AI.</p>
+      </button>
+      <button class="xai-product-item" data-product="imagine">
+        <h3>Imagine</h3>
+        <p>Generate and edit images and video from text.</p>
+      </button>
+      <button class="xai-product-item" data-product="voice">
+        <h3>Voice</h3>
+        <p>Build voice agents with sub-second latency.</p>
+      </button>
+      <button class="xai-product-item" data-product="bot">
+        <h3>Bot</h3>
+        <p>A new kind of colleague with its own computer.</p>
+      </button>
+    </div>
+
+    <!-- Center: Animated Preview -->
+    <div class="xai-preview">
+      <!-- Chat Preview -->
+      <div class="xai-preview-panel active" data-preview="chat">
+        <div class="chat-preview">
+          <div class="chat-messages">
+            <div class="chat-bubble chat-bot anim-fade" style="animation-delay:0s">Two particles become linked — measuring one instantly determines the other, regardless of distance.</div>
+            <div class="chat-bubble chat-user anim-fade" style="animation-delay:0.8s">Why is the sky blue?</div>
+            <div class="chat-bubble chat-bot anim-fade" style="animation-delay:1.6s">Shorter blue wavelengths scatter more off air molecules than longer red ones.</div>
+            <div class="chat-bubble chat-user anim-fade" style="animation-delay:2.4s">How do black holes form?</div>
+            <div class="chat-bubble chat-bot anim-fade typing-bubble" style="animation-delay:3.2s">A massive star exhausts its fuel and gravity collapses the core into a singularity.<span class="typing-cursor"></span></div>
+          </div>
+          <div class="preview-footer">
+            <span class="preview-label">Chat</span>
+            <a href="#" class="preview-explore">Explore →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Build Preview -->
+      <div class="xai-preview-panel" data-preview="build">
+        <div class="build-preview">
+          <div class="terminal-header">
+            <span class="terminal-dot red"></span>
+            <span class="terminal-dot yellow"></span>
+            <span class="terminal-dot green"></span>
+            <span class="terminal-title">projects/main</span>
+            <span class="terminal-progress"><span class="progress-bar"><span class="progress-fill"></span></span><span class="progress-text">14.75%</span></span>
+          </div>
+          <div class="terminal-body">
+            <div class="code-line running-line"><span class="step-bar">|</span> Design token rotation <span class="step-tag">general</span> <span class="step-status running">[running]</span></div>
+            <div class="code-line done-line"><span class="step-bar">|</span> Find session references <span class="step-tag">explore</span> <span class="step-status done">[done]</span></div>
+            <div class="code-thinking"><span class="thinking-diamond">◆</span> Thought for 4.1s</div>
+            <div class="code-edit"><span class="edit-diamond">◆</span> <strong>Edit</strong> <span class="edit-path">src/middleware/auth.ts</span></div>
+            <div class="code-line"><span class="line-num">42</span> export async function handler(req) {</div>
+            <div class="code-line highlight-green"><span class="line-num">43</span>   const token = extractBearer(req);</div>
+            <div class="code-line highlight-green"><span class="line-num">44</span>   if (!token) return unauthorized();</div>
+            <div class="code-line highlight-red"><span class="line-num">47</span>   const session = await getSession(req);</div>
+            <div class="code-line highlight-green"><span class="line-num">48</span>   req.user = payload;</div>
+            <div class="code-action"><span class="action-chevron">›</span> Add rate limiting to all API routes.</div>
+            <div class="code-thinking"><span class="thinking-dots-icon">⋮</span> Thinking...</div>
+            <div class="code-step"><span class="step-icon">▸</span> <span class="step-cmd">grep</span> "rateLimit" src/ <span class="step-info">no matches</span></div>
+            <div class="code-step"><span class="step-icon">▸</span> <span class="step-cmd">read_file</span> src/api/routes.ts <span class="step-info">42 lines</span></div>
+            <div class="code-line done-line"><span class="step-bar">|</span> Scan route handlers <span class="step-tag">explore</span> <span class="step-status done">[done]</span></div>
+          </div>
+          <div class="preview-footer dark">
+            <span class="preview-label">Build</span>
+            <a href="#" class="preview-explore">Explore →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Imagine Preview -->
+      <div class="xai-preview-panel" data-preview="imagine">
+        <div class="imagine-preview">
+          <div class="imagine-grid">
+            <div class="imagine-main">
+              <img src="assets/xai/nav-1.jpg" alt="Generated image" class="imagine-img imagine-img-main">
+            </div>
+            <div class="imagine-side">
+              <img src="assets/xai/nav-7.jpg" alt="Generated image" class="imagine-img imagine-img-top">
+              <img src="assets/xai/nav-8.jpg" alt="Generated image" class="imagine-img imagine-img-bottom">
+            </div>
+          </div>
+          <div class="preview-footer">
+            <span class="preview-label">Imagine</span>
+            <a href="#" class="preview-explore">Explore →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Voice Preview -->
+      <div class="xai-preview-panel" data-preview="voice">
+        <div class="voice-preview">
+          <div class="voice-sphere">
+            <div class="sphere-core"></div>
+            <div class="sphere-glow"></div>
+            <div class="sphere-ring sphere-ring-1"></div>
+            <div class="sphere-ring sphere-ring-2"></div>
+            <div class="sphere-ring sphere-ring-3"></div>
+            <div class="sphere-particles">
+              <span></span><span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span><span></span>
+            </div>
+          </div>
+          <div class="preview-footer">
+            <span class="preview-label">Voice</span>
+            <a href="#" class="preview-explore">Explore →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bot Preview -->
+      <div class="xai-preview-panel" data-preview="bot">
+        <div class="bot-preview">
+          <div class="bot-header-bar">
+            <span class="bot-check">✓</span>
+            <span>Flagged → 1 charge · harbor hotel, $412 twice</span>
+          </div>
+          <div class="chat-messages">
+            <div class="chat-bubble chat-bot anim-fade" style="animation-delay:0s">the harbor hotel charged $412 on the 12th and again on the 14th. double-billed, or two separate nights?</div>
+            <div class="chat-bubble chat-user-dark anim-fade" style="animation-delay:1s">two nights, mia stayed the second one</div>
+          </div>
+          <div class="bot-thinking">
+            <span class="thinking-dot"></span>
+            <span class="thinking-dot"></span>
+            <span class="thinking-dot"></span>
+            <span class="thinking-label">Thinking</span>
+          </div>
+          <div class="preview-footer">
+            <span class="preview-label">Bot</span>
+            <a href="#" class="preview-explore">Explore →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="xai.js"></script>
+</body>
+</html>
