@@ -33,3 +33,26 @@
 .ecosystem-logo:hover{opacity:1}
 .ecosystem-logo img{height:32px;width:auto;max-width:140px;display:block}
 @media(max-width:768px){.ecosystem-row{gap:1.5rem}.ecosystem-logo img{height:24px;max-width:100px}}
+
+/* ===== COMPARISON TABLE ===== */
+.section--comparison{padding:5rem 0;background:#f8f9fb}
+.comparison-header{text-align:center;max-width:750px;margin:0 auto 3rem}
+.comparison-title{font-size:clamp(1.8rem,3.5vw,2.6rem);font-family:var(--font-heading);margin-bottom:1rem;line-height:1.15}
+.comparison-subtitle{font-size:1.05rem;color:var(--text-secondary);line-height:1.65}
+.comparison-table{max-width:1000px;margin:0 auto;border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.06);border:1px solid var(--border-2)}
+.comp-row{display:grid;grid-template-columns:160px 1fr 1fr;min-height:64px}
+.comp-row:not(.comp-header){border-top:1px solid #eee}
+.comp-cell{display:flex;align-items:center;padding:1rem 1.5rem;font-size:0.92rem;line-height:1.5}
+.comp-focus-head{background:#f0f1f3;font-weight:700;font-size:0.85rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--primary-charcoal-01);justify-content:center}
+.comp-bad-head{background:#6b7280;color:#fff;font-weight:700;font-size:0.85rem;text-transform:uppercase;letter-spacing:0.04em;justify-content:center;text-align:center}
+.comp-good-head{background:#1a3a2a;color:#fff;font-weight:700;font-size:0.85rem;text-transform:uppercase;letter-spacing:0.04em;justify-content:center;text-align:center}
+.comp-focus{font-weight:700;font-size:0.9rem;color:var(--primary-charcoal-01);background:#fafbfc;border-right:1px solid #eee}
+.comp-bad{color:#6b7280;justify-content:center;text-align:center;position:relative}
+.comp-bad::before{content:'✕';position:absolute;left:1rem;color:#d1d5db;font-size:0.8rem;font-weight:700}
+.comp-good{color:var(--primary-charcoal-01);justify-content:center;text-align:center;font-weight:500;position:relative;background:rgba(26,58,42,0.02)}
+.comp-good::before{content:'✓';position:absolute;left:1rem;color:#1a3a2a;font-size:0.9rem;font-weight:700}
+.comp-row-last .comp-cell{border-bottom:none}
+.comp-row:hover:not(.comp-header){background:rgba(16,119,215,0.02)}
+.comp-row:hover .comp-good{background:rgba(26,58,42,0.05)}
+@media(max-width:768px){.comp-row{grid-template-columns:100px 1fr 1fr}.comp-cell{padding:0.75rem 0.75rem;font-size:0.8rem}.comp-bad::before,.comp-good::before{display:none}.comp-focus-head,.comp-bad-head,.comp-good-head{font-size:0.7rem;padding:0.75rem 0.5rem}}
+@media(max-width:480px){.comp-row{grid-template-columns:80px 1fr 1fr}.comp-cell{padding:0.6rem 0.5rem;font-size:0.75rem}}
